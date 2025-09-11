@@ -1,21 +1,20 @@
 public class LivroDeNotas {
-
-    public LivroDeNotas() {
-        // Construtor de sua classe
-
-    }
     
     private String disciplina;
 
+    public LivroDeNotas(String disciplina   ) {
+        System.out.println("Nasci");
+    }
 
     public void setDisciplina(String d){
         disciplina = d;
     }
-    public void getDisciplina(String d){
+
+    public void exibirMensagem(){
+        System.out.println("Bem vindo ao livro de " + disciplina);
+    }
+    
+    public String getDisciplina(){
         return disciplina;
     }
-    public void exibirMensagem(){
-        System.out.println("Disciplina: ", disciplina);
-    }
-
 }
