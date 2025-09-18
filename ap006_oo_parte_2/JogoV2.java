@@ -12,15 +12,9 @@ public class JogoV2 {
             // 1: cacar / 2: comer / 3: dormir
             var acaoP1 = gerador.nextInt(1, 4);
             switch (acaoP1){
-                case 1:
-                    p1.cacar();
-                    break;
-                case 2:
-                    p1.comer();
-                    break;
-                case 3:
-                    p1.dormir();
-                    break;
+                case 1 -> p1.cacar();
+                case 2 -> p1.comer();
+                case 3 -> p1.dormir();
             }
             System.out.println("*******************");
             var repr = p1.toString();
